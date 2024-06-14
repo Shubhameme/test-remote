@@ -1,0 +1,22 @@
+*put this in Dockerfile*
+
+FROM nginx
+COPY index.html /usr/share/nginx/html
+
+
+shubhameme@ShubhLinux:~/myapp$ ls
+
+Dockerfile  index.html
+
+shubhameme@ShubhLinux:~/myapp$ vi index.html 
+
+shubhameme@ShubhLinux:~/myapp$ docker build -t myapp .
+
+shubhameme@ShubhLinux:~/myapp$ docker run -d -p 8080:80 myapp
+
+shubhameme@ShubhLinux:~/myapp$ 
+
+
+
+
+
